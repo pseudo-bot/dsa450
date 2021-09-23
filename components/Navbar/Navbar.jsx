@@ -10,7 +10,7 @@ const Navbar = () => {
 		setHidden(!hidden);
 	}
 	return (
-		<nav className="w-full flex h-16 bg-gray-700 fixed items-center sm:justify-around justify-between px-8 ">
+		<nav className="w-full flex h-16 bg-gray-700 fixed items-center sm:justify-around justify-between px-8 z-10">
 			<Signin />
 			<NavLinks hidden={hidden}/>
 			<Menubar click={handleClick} />

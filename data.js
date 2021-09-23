@@ -11,15 +11,15 @@ export default [
 				link: 'https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/',
 			},
 			{
-				desc: 'Find the "Kth" max and min element of an array\n\t\t\t\t\t',
+				desc: 'Find the "Kth" max and min element of an array',
 				link: 'https://practice.geeksforgeeks.org/problems/kth-smallest-element/0',
 			},
 			{
-				desc: 'Given an array which consists of only 0, 1 and 2. Sort the array\n\t\t\t\t\t\twithout using any sorting algo',
+				desc: 'Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo',
 				link: 'https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s/0',
 			},
 			{
-				desc: 'Move all the negative elements to one side of the array\n\t\t\t\t\t',
+				desc: 'Move all the negative elements to one side of the array ',
 				link: 'https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/',
 			},
 			{
@@ -71,7 +71,7 @@ export default [
 				link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/',
 			},
 			{
-				desc: 'find all pairs on integer array whose sum is equal to given\n\t\t\t\t\t\tnumber',
+				desc: 'find all pairs on integer array whose sum is equal to given number',
 				link: 'https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1',
 			},
 			{
@@ -79,7 +79,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/common-elements1132/1',
 			},
 			{
-				desc: 'Rearrange the array in alternating positive and negative items with\n\t\t\t\t\t\tO(1) extra space',
+				desc: 'Rearrange the array in alternating positive and negative items with O(1) extra space',
 				link: 'https://www.geeksforgeeks.org/rearrange-array-alternating-positive-negative-items-o1-extra-space/',
 			},
 			{
@@ -91,7 +91,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers/0',
 			},
 			{
-				desc: 'find maximum product subarray\n\t\t\t\t\t',
+				desc: 'find maximum product subarray ',
 				link: 'https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1',
 			},
 			{
@@ -99,7 +99,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0',
 			},
 			{
-				desc: 'Given an array of size n and a number k, fin all elements that\n\t\t\t\t\t\tappear more than " n/k " times.',
+				desc: 'Given an array of size n and a number k, fin all elements that appear more than " n/k " times.',
 				link: 'https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/',
 			},
 			{
@@ -168,7 +168,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1',
 			},
 			{
-				desc: 'Print elements in sorted order using row-column wise sorted\n\t\t\t\t\t\tmatrix',
+				desc: 'Print elements in sorted order using row-column wise sorted matrix',
 				link: 'https://practice.geeksforgeeks.org/problems/sorted-matrix/0',
 			},
 			{
@@ -209,11 +209,11 @@ export default [
 				link: 'https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/',
 			},
 			{
-				desc: 'Write a Code to check whether one string is a rotation of\n\t\t\t\t\t\tanother',
+				desc: 'Write a Code to check whether one string is a rotation of another',
 				link: 'https://www.geeksforgeeks.org/a-program-to-check-if-strings-are-rotations-of-each-other/',
 			},
 			{
-				desc: 'Write a Program to check whether a string is a valid shuffle of two\n\t\t\t\t\t\tstrings or not',
+				desc: 'Write a Program to check whether a string is a valid shuffle of two strings or not',
 				link: 'https://www.programiz.com/java-programming/examples/check-valid-shuffle-of-strings',
 			},
 			{
@@ -221,7 +221,7 @@ export default [
 				link: 'https://leetcode.com/problems/count-and-say/',
 			},
 			{
-				desc: 'Write a program to find the longest Palindrome in a string.[\n\t\t\t\t\t\tLongest palindromic Substring]',
+				desc: 'Write a program to find the longest Palindrome in a string.[ Longest palindromic Substring]',
 				link: 'https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string/0',
 			},
 			{
@@ -237,7 +237,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0',
 			},
 			{
-				desc: 'Split the Binary string into two substring with equal 0’s and\n\t\t\t\t\t\t1’s',
+				desc: 'Split the Binary string into two substring with equal 0’s and 1’s',
 				link: 'https://www.geeksforgeeks.org/split-the-binary-string-into-substrings-with-equal-number-of-0s-and-1s/',
 			},
 			{
@@ -249,7 +249,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/edit-distance3702/1',
 			},
 			{
-				desc: 'Find next greater number with same set of digits. [Very Very\n\t\t\t\t\t\tIMP]',
+				desc: 'Find next greater number with same set of digits. [Very Very IMP]',
 				link: 'https://practice.geeksforgeeks.org/problems/next-permutation/0',
 			},
 			{
@@ -269,11 +269,11 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1',
 			},
 			{
-				desc: 'Convert a Sentence into its equivalent mobile numeric keypad\n\t\t\t\t\t\tsequence.',
+				desc: 'Convert a Sentence into its equivalent mobile numeric keypad sequence.',
 				link: 'https://www.geeksforgeeks.org/convert-sentence-equivalent-mobile-numeric-keypad-sequence/',
 			},
 			{
-				desc: 'Minimum number of bracket reversals needed to make an expression\n\t\t\t\t\t\tbalanced.',
+				desc: 'Minimum number of bracket reversals needed to make an expression balanced.',
 				link: 'https://practice.geeksforgeeks.org/problems/count-the-reversals/0',
 			},
 			{
@@ -317,19 +317,19 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0',
 			},
 			{
-				desc: 'Program to generate all possible valid IP addresses from given\n\t\t\t\t\t\tstring.',
+				desc: 'Program to generate all possible valid IP addresses from given string.',
 				link: 'https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/',
 			},
 			{
-				desc: 'Write a program tofind the smallest window that contains all\n\t\t\t\t\t\tcharacters of string itself.',
+				desc: 'Write a program tofind the smallest window that contains all characters of string itself.',
 				link: 'https://practice.geeksforgeeks.org/problems/smallest-distant-window/0',
 			},
 			{
-				desc: 'Rearrange characters in a string such that no two adjacent are\n\t\t\t\t\t\tsame',
+				desc: 'Rearrange characters in a string such that no two adjacent are same',
 				link: 'https://practice.geeksforgeeks.org/problems/rearrange-characters/0',
 			},
 			{
-				desc: 'Minimum characters to be added at front to make string\n\t\t\t\t\t\tpalindrome',
+				desc: 'Minimum characters to be added at front to make string palindrome',
 				link: 'https://www.geeksforgeeks.org/minimum-characters-added-front-make-string-palindrome/',
 			},
 			{
@@ -337,7 +337,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/k-anagrams-1/0',
 			},
 			{
-				desc: 'Find the smallest window in a string containing all characters of\n\t\t\t\t\t\tanother string',
+				desc: 'Find the smallest window in a string containing all characters of another string',
 				link: 'https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string/0',
 			},
 			{
@@ -349,11 +349,11 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/wildcard-string-matching/0',
 			},
 			{
-				desc: 'Function to find Number of customers who could not get a\n\t\t\t\t\t\tcomputer',
+				desc: 'Function to find Number of customers who could not get a computer',
 				link: 'https://www.geeksforgeeks.org/function-to-find-number-of-customers-who-could-not-get-a-computer/',
 			},
 			{
-				desc: 'Transform One String to Another using Minimum Number of Given\n\t\t\t\t\t\tOperation',
+				desc: 'Transform One String to Another using Minimum Number of Given Operation',
 				link: 'https://www.geeksforgeeks.org/transform-one-string-to-another-using-minimum-number-of-given-operation/',
 			},
 			{
@@ -361,7 +361,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/isomorphic-strings/0',
 			},
 			{
-				desc: 'Recursively print all sentences that can be formed from list of\n\t\t\t\t\t\tword lists',
+				desc: 'Recursively print all sentences that can be formed from list of word lists',
 				link: 'https://www.geeksforgeeks.org/recursively-print-all-sentences-that-can-be-formed-from-list-of-word-lists/',
 			},
 		],
@@ -386,7 +386,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/count-squares3649/1',
 			},
 			{
-				desc: 'Maximum and minimum of an array using minimum number of\n\t\t\t\t\t\tcomparisons',
+				desc: 'Maximum and minimum of an array using minimum number of comparisons',
 				link: 'https://practice.geeksforgeeks.org/problems/middle-of-three2926/1',
 			},
 			{
@@ -510,7 +510,7 @@ export default [
 		topic: 'LinkedList',
 		problems: [
 			{
-				desc: 'Write a Program to reverse the Linked List. (Both Iterative and\n\t\t\t\t\t\trecursive)',
+				desc: 'Write a Program to reverse the Linked List. (Both Iterative and recursive)',
 				link: 'https://www.geeksforgeeks.org/reverse-a-linked-list/',
 			},
 			{
@@ -538,7 +538,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1',
 			},
 			{
-				desc: 'Write a Program to Move the last element to Front in a Linked\n\t\t\t\t\t\tList.',
+				desc: 'Write a Program to Move the last element to Front in a Linked List.',
 				link: 'https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/',
 			},
 			{
@@ -578,7 +578,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1',
 			},
 			{
-				desc: 'Write a Program to check whether the Singly Linked list is a\n\t\t\t\t\t\tpalindrome or not.',
+				desc: 'Write a Program to check whether the Singly Linked list is a palindrome or not.',
 				link: 'https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1',
 			},
 			{
@@ -594,7 +594,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/',
 			},
 			{
-				desc: 'Count triplets in a sorted DLL whose sum is equal to given value\n\t\t\t\t\t\t“X”.',
+				desc: 'Count triplets in a sorted DLL whose sum is equal to given value “X”.',
 				link: 'https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/',
 			},
 			{
@@ -642,7 +642,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1',
 			},
 			{
-				desc: 'Find the first non-repeating character from a stream of\n\t\t\t\t\t\tcharacters',
+				desc: 'Find the first non-repeating character from a stream of characters',
 				link: 'https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream/0',
 			},
 		],
@@ -743,7 +743,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/leaf-at-same-level/1',
 			},
 			{
-				desc: 'Check if a Binary Tree contains duplicate subtrees of size 2 or\n\t\t\t\t\t\tmore [ IMP ]',
+				desc: 'Check if a Binary Tree contains duplicate subtrees of size 2 or more [ IMP ]',
 				link: 'https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1',
 			},
 			{
@@ -751,7 +751,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/check-mirror-in-n-ary-tree/0',
 			},
 			{
-				desc: 'Sum of Nodes on the Longest path from root to leaf node\n\t\t\t\t\t',
+				desc: 'Sum of Nodes on the Longest path from root to leaf node ',
 				link: 'https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1',
 			},
 			{
@@ -763,7 +763,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/find-largest-subtree-sum-tree/',
 			},
 			{
-				desc: 'Maximum Sum of nodes in Binary tree such that no two are adjacent\n\t\t\t\t\t',
+				desc: 'Maximum Sum of nodes in Binary tree such that no two are adjacent ',
 				link: 'https://www.geeksforgeeks.org/maximum-sum-nodes-binary-tree-no-two-adjacent/',
 			},
 			{
@@ -812,7 +812,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1',
 			},
 			{
-				desc: 'Check if a tree is a BST or not\n\t\t\t\t\t',
+				desc: 'Check if a tree is a BST or not ',
 				link: 'https://practice.geeksforgeeks.org/problems/check-for-bst/1',
 			},
 			{
@@ -848,7 +848,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1',
 			},
 			{
-				desc: 'Count pairs from 2 BST whose sum is equal to given value\n\t\t\t\t\t\t"X"',
+				desc: 'Count pairs from 2 BST whose sum is equal to given value "X"',
 				link: 'https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1',
 			},
 			{
@@ -860,11 +860,11 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1',
 			},
 			{
-				desc: 'Replace every element with the least greater element on its\n\t\t\t\t\t\tright',
+				desc: 'Replace every element with the least greater element on its right',
 				link: 'https://www.geeksforgeeks.org/replace-every-element-with-the-least-greater-element-on-its-right/',
 			},
 			{
-				desc: 'Given "n" appointments, find the conflicting\n\t\t\t\t\t\tappointments',
+				desc: 'Given "n" appointments, find the conflicting appointments',
 				link: 'https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/',
 			},
 			{
@@ -929,7 +929,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/shop-in-candy-store/0',
 			},
 			{
-				desc: 'Minimize Cash Flow among a given set of friends who have borrowed\n\t\t\t\t\t\tmoney from each other',
+				desc: 'Minimize Cash Flow among a given set of friends who have borrowed money from each other',
 				link: 'https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/',
 			},
 			{
@@ -1017,11 +1017,11 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes/0',
 			},
 			{
-				desc: 'Find smallest number with given number of digits and sum of\n\t\t\t\t\t\tdigits',
+				desc: 'Find smallest number with given number of digits and sum of digits',
 				link: 'https://practice.geeksforgeeks.org/problems/smallest-number5829/1',
 			},
 			{
-				desc: 'Rearrange characters in a string such that no two adjacent are\n\t\t\t\t\t\tsame',
+				desc: 'Rearrange characters in a string such that no two adjacent are same',
 				link: 'https://practice.geeksforgeeks.org/problems/rearrange-characters/0',
 			},
 			{
@@ -1083,7 +1083,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0',
 			},
 			{
-				desc: 'Print all permutations of a string\n\t\t\t\t\t',
+				desc: 'Print all permutations of a string ',
 				link: 'https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0',
 			},
 			{
@@ -1095,7 +1095,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/longest-possible-route-in-a-matrix-with-hurdles/',
 			},
 			{
-				desc: 'Print all possible paths from top left to bottom right of a mXn\n\t\t\t\t\t\tmatrix',
+				desc: 'Print all possible paths from top left to bottom right of a mXn matrix',
 				link: 'https://www.geeksforgeeks.org/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/',
 			},
 			{
@@ -1112,11 +1112,11 @@ export default [
 		topic: 'Stacks & Queues',
 		problems: [
 			{
-				desc: '\n\t\t\t\t\t\tImplement Stack from Scratch',
+				desc: ' Implement Stack from Scratch',
 				link: 'https://www.tutorialspoint.com/javaexamples/data_stack.htm',
 			},
 			{
-				desc: '\n\t\t\t\t\t\tImplement Queue from Scratch',
+				desc: ' Implement Queue from Scratch',
 				link: 'https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/',
 			},
 			{
@@ -1140,7 +1140,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1',
 			},
 			{
-				desc: 'Design a Stack that supports getMin() in O(1) time and O(1) extra\n\t\t\t\t\t\tspace.',
+				desc: 'Design a Stack that supports getMin() in O(1) time and O(1) extra space.',
 				link: 'https://practice.geeksforgeeks.org/problems/special-stack/1',
 			},
 			{
@@ -1160,7 +1160,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression/0',
 			},
 			{
-				desc: 'Implement a method to insert an element at its bottom without using\n\t\t\t\t\t\tany other data structure.',
+				desc: 'Implement a method to insert an element at its bottom without using any other data structure.',
 				link: 'https://stackoverflow.com/questions/45130465/inserting-at-the-end-of-stack',
 			},
 			{
@@ -1196,11 +1196,11 @@ export default [
 				link: 'https://www.geeksforgeeks.org/implement-stack-queue-using-deque/',
 			},
 			{
-				desc: 'Stack Permutations (Check if an array is stack permutation of\n\t\t\t\t\t\tother)',
+				desc: 'Stack Permutations (Check if an array is stack permutation of other)',
 				link: 'https://www.geeksforgeeks.org/stack-permutations-check-if-an-array-is-stack-permutation-of-other/',
 			},
 			{
-				desc: 'Implement Queue using Stack\n\t\t\t\t\t',
+				desc: 'Implement Queue using Stack ',
 				link: 'https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1',
 			},
 			{
@@ -1248,15 +1248,15 @@ export default [
 				link: 'https://www.geeksforgeeks.org/check-if-all-levels-of-two-trees-are-anagrams-or-not/',
 			},
 			{
-				desc: 'Sum of minimum and maximum elements of all subarrays of size\n\t\t\t\t\t\t“k”.',
+				desc: 'Sum of minimum and maximum elements of all subarrays of size “k”.',
 				link: 'https://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/',
 			},
 			{
-				desc: 'Minimum sum of squares of character counts in a given string after\n\t\t\t\t\t\tremoving “k” characters.',
+				desc: 'Minimum sum of squares of character counts in a given string after removing “k” characters.',
 				link: 'https://practice.geeksforgeeks.org/problems/game-with-string/0',
 			},
 			{
-				desc: 'Queue based approach or first non-repeating character in a\n\t\t\t\t\t\tstream.',
+				desc: 'Queue based approach or first non-repeating character in a stream.',
 				link: 'https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream/0',
 			},
 			{
@@ -1333,7 +1333,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/convert-min-heap-to-max-heap/',
 			},
 			{
-				desc: 'Rearrange characters in a string such that no two adjacent are\n\t\t\t\t\t\tsame.',
+				desc: 'Rearrange characters in a string such that no two adjacent are same.',
 				link: 'https://practice.geeksforgeeks.org/problems/rearrange-characters/0',
 			},
 			{
@@ -1350,19 +1350,19 @@ export default [
 				link: 'https://1drv.ms/t/s!AqTOHFO77CqEiRua06v1PATyiFg5',
 			},
 			{
-				desc: 'Implement BFS algorithm\n\t\t\t\t\t',
+				desc: 'Implement BFS algorithm ',
 				link: 'https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1',
 			},
 			{
-				desc: 'Implement DFS Algo\n\t\t\t\t\t',
+				desc: 'Implement DFS Algo ',
 				link: 'https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/',
 			},
 			{
-				desc: 'Detect Cycle in Directed Graph using BFS/DFS Algo\n\t\t\t\t\t',
+				desc: 'Detect Cycle in Directed Graph using BFS/DFS Algo ',
 				link: 'https://www.geeksforgeeks.org/detect-cycle-in-a-graph/',
 			},
 			{
-				desc: 'Detect Cycle in UnDirected Graph using BFS/DFS Algo\n\t\t\t\t\t',
+				desc: 'Detect Cycle in UnDirected Graph using BFS/DFS Algo ',
 				link: 'https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1',
 			},
 			{
@@ -1386,7 +1386,7 @@ export default [
 				link: 'https://leetcode.com/problems/number-of-operations-to-make-network-connected/',
 			},
 			{
-				desc: 'word Ladder\n\t\t\t\t\t',
+				desc: 'word Ladder ',
 				link: 'https://leetcode.com/problems/word-ladder/',
 			},
 			{
@@ -1394,15 +1394,15 @@ export default [
 				link: 'https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/',
 			},
 			{
-				desc: 'Implement Topological Sort\n\t\t\t\t\t',
+				desc: 'Implement Topological Sort ',
 				link: 'https://practice.geeksforgeeks.org/problems/topological-sort/1',
 			},
 			{
-				desc: 'Minimum time taken by each job to be completed given by a Directed\n\t\t\t\t\t\tAcyclic Graph',
+				desc: 'Minimum time taken by each job to be completed given by a Directed Acyclic Graph',
 				link: 'https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/',
 			},
 			{
-				desc: 'Find whether it is possible to finish all tasks or not from given\n\t\t\t\t\t\tdependencies',
+				desc: 'Find whether it is possible to finish all tasks or not from given dependencies',
 				link: 'https://www.geeksforgeeks.org/find-whether-it-is-possible-to-finish-all-tasks-or-not-from-given-dependencies/',
 			},
 			{
@@ -1410,7 +1410,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1',
 			},
 			{
-				desc: 'Given a sorted Dictionary of an Alien Language, find order of\n\t\t\t\t\t\tcharacters',
+				desc: 'Given a sorted Dictionary of an Alien Language, find order of characters',
 				link: 'https://practice.geeksforgeeks.org/problems/alien-dictionary/1',
 			},
 			{
@@ -1514,7 +1514,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/number-of-triangles-in-directed-and-undirected-graphs/',
 			},
 			{
-				desc: 'Minimise the cashflow among a given set of friends who have\n\t\t\t\t\t\tborrowed money from each other',
+				desc: 'Minimise the cashflow among a given set of friends who have borrowed money from each other',
 				link: 'https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/',
 			},
 			{
@@ -1560,7 +1560,7 @@ export default [
 				link: 'https://practice.geeksforgeeks.org/problems/set-bits0143/1',
 			},
 			{
-				desc: 'Find the two non-repeating elements in an array of repeating\n\t\t\t\t\t\telements',
+				desc: 'Find the two non-repeating elements in an array of repeating elements',
 				link: 'https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1',
 			},
 			{
@@ -1584,7 +1584,7 @@ export default [
 				link: 'https://www.geeksforgeeks.org/copy-set-bits-in-a-range/',
 			},
 			{
-				desc: 'Divide two integers without using multiplication, division and mod\n\t\t\t\t\t\toperator',
+				desc: 'Divide two integers without using multiplication, division and mod operator',
 				link: 'https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/',
 			},
 			{
