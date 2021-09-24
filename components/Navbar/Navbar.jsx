@@ -13,7 +13,7 @@ const Navbar = () => {
 		<nav className="w-full flex h-16 bg-gray-700 dark:bg-gray-900 fixed items-center sm:justify-around justify-between px-8 z-10">
 			<Signin />
 			<NavLinks hidden={hidden}/>
-			<Menubar click={handleClick} />
+			<Menubar click={handleClick} hidden={hidden}/>
 		</nav>
 	);
 };

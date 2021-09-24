@@ -9,11 +9,11 @@ const Layout = ({ children }) => {
 		setDark(!dark);
 	}
 	return (
-		<main className={`${dark ? 'dark' : ''}`}>
-			<div className="dark:bg-gray-600">
+		<main className={`${dark ? 'dark' : ''} h-full`}>
+			<div className="dark:bg-gray-600 h-full">
 				<Navbar />
 				{children}
-				<DarkMode onClick={handleClick}/>
+				<DarkMode onClick={handleClick} dark={dark}/>
 			</div>
 		</main>
 	);

@@ -1,20 +1,10 @@
-import { useState } from 'react';
+import Image from 'next/image';
+import Arrow from '../../assets/arrow.png';
 
-const Bars = () => {
+const Menubar = ({ click, hidden }) => {
 	return (
-		<div className="w-full h-1 bg-gray-300 transition-bg duration-200 group-hover:bg-white rounded-full"></div>
-	);
-};
-
-const Menubar = ({ click }) => {
-	return (
-		<div
-			className="sm:hidden flex h-8 w-8 flex-col justify-around group cursor-pointer"
-			onClick={click}
-		>
-			<Bars />
-			<Bars />
-			<Bars />
+		<div className={`sm:hidden h-8 w-8 group cursor-pointer transition-transform duration-300 ${hidden ? '' : 'rotate-180'}`} onClick={click}>
+			<Image src={Arrow}/>
 		</div>
 	);
 };
