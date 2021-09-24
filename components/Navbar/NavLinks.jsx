@@ -14,7 +14,7 @@ export default function NavLinks({ hidden }) {
 			sm:border sm:rounded sm:relative absolute
 			sm:top-0 top-16 left-0 sm:w-auto 
 			w-full items-center sm:bg-transparent 
-			bg-gray-700 transition-all ease-in-out duration-500 
+			bg-gray-700 dark:bg-gray-900 transition-all ease-in-out duration-500 
 			${hidden ? '-translate-y-52 opacity-0' : ''} sm:translate-y-0 sm:opacity-100`}
 		>
 			<NavLinksText content="About" link="#" />
