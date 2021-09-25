@@ -7,14 +7,13 @@ const Layout = ({ children }) => {
 
 	const handleClick = () => {
 		setDark(!dark);
-	}
+	};
 	return (
-		<main className={`${dark ? 'dark' : ''} h-full`}>
-			<div className="dark:bg-gray-600 h-full">
-				<Navbar />
-				{children}
-				<DarkMode onClick={handleClick} dark={dark}/>
-			</div>
+		<main className={`${dark ? 'dark' : ''}`}>
+			<div className="dark:bg-gray-700 h-screen w-screen fixed z-0"></div>
+			<Navbar />
+			{children}
+			<DarkMode onClick={handleClick} dark={dark} />
 		</main>
 	);
 };
