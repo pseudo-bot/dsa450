@@ -5,7 +5,7 @@ const TabName = ({ name, selected, flag, onClick, href }) => {
 	return (
 		<Link href={href} replace>
 			<div
-				className={`w-full text-center cursor-pointer py-3 border-b-2 
+				className={`w-full text-center cursor-pointer py-2 border-b-2 
 						${
 					selected
 						? 'border-green-300 bg-green-100 dark:border-gray-200 dark:bg-gray-800'
@@ -13,7 +13,7 @@ const TabName = ({ name, selected, flag, onClick, href }) => {
 				}
 						dark:text-gray-200
 						transition-all duration-0
-						text-gray-500 text-lg uppercase tracking-wider font-bold
+						text-gray-500 sm:text-lg uppercase tracking-wider font-bold
 					`}
 				onClick={() => {
 					if ((name === 'Problems' && flag) || (name === 'Leaderboards' && !flag))
