@@ -8,8 +8,8 @@ const TabName = ({ name, selected, flag, onClick, href }) => {
 				className={`w-full text-center cursor-pointer py-2 border-b-2 
 						${
 					selected
-						? 'border-green-300 bg-green-100 dark:border-gray-200 dark:bg-gray-800'
-						: 'hover:bg-green-50 hover:border-green-200 dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:border-gray-500'
+						? 'border-green-300 bg-gray-100 dark:border-gray-200 dark:bg-gray-800'
+						: 'hover:bg-green-100 hover:border-green-200 dark:bg-gray-700 bg-white dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:border-gray-500'
 				}
 						dark:text-gray-200
 						transition-all duration-0

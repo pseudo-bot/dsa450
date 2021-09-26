@@ -2,7 +2,7 @@ import Tab from './Tab';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-export default function Layout({ children }) {
+export default function Layout() {
 	const [questionTab, setQuestionTab] = useState(1);
 	const router = useRouter();
 	const problemPath = '/[topic]/problems';

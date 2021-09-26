@@ -1,0 +1,66 @@
+{
+	"arrays": {
+		"easy": [
+			{
+				"desc": "Rotate Array",
+				"href": "https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1"
+			},
+			{
+				"desc": "Majority Element",
+				"href": "https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1"
+			},
+			{
+				"desc": "Plus One",
+				"href": "https://practice.geeksforgeeks.org/problems/plus-one/1/"
+			},
+			{
+				"desc": "Large Factorial",
+				"href": "https://practice.geeksforgeeks.org/problems/large-factorial4721/1/"
+			},
+			{
+				"desc": "Product array puzzle",
+				"href": "https://practice.geeksforgeeks.org/problems/product-array-puzzle4525/1"
+			}
+		],
+		"medium": [
+			{
+				"desc": "Jump Game",
+				"href": "https://practice.geeksforgeeks.org/problems/jump-game/1/"
+			},
+			{
+				"desc": "Maximize Number of 1's",
+				"href": "https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1"
+			},
+			{
+				"desc": "Stock buy and sell",
+				"href": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1"
+			},
+			{
+				"desc": "https://practice.geeksforgeeks.org/problems/maximum-index-1587115620/1",
+				"href": "Maximum Index"
+			},
+			{
+				"desc": "https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1",
+				"href": "Trapping Rain Water"
+			},
+			{
+				"desc": "Three Sum Closest",
+				"href": "https://practice.geeksforgeeks.org/problems/three-sum-closest/1/"
+			}
+		],
+		"hard": [
+			{
+				"desc": "Max Circular Subarray Sum",
+				"href": "https://practice.geeksforgeeks.org/problems/max-circular-subarray-sum-1587115620/1"
+			},
+			{
+				"desc": "Merge Without Extra Space",
+				"href": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1"
+			},
+			{
+				"desc": "Number of subsets with product less than k",
+				"href": "https://practice.geeksforgeeks.org/problems/number-of-subsets-with-product-less-than-k/1/#"
+			}
+		]
+	}
+}

@@ -1,31 +1,33 @@
-import Data from '../../data';
-import Layout from '../../components/Topic/Layout';
+import Problem from '../../components/Topic/Problems.jsx';
+import Data from '../../assets/data/data'
 
-const Topic = ({ data }) => {
+const Problems = ({ data }) => {
 	return (
-		<div>
-			problems
-		</div>
+		<>
+			<Problem data={data} />
+		</>
 	);
 };
 
-export default Topic;
+export default Problems;
 
-export function getStaticProps(context) {
+export const getStaticProps = (context) => {
 	const path = context.params.topic;
 	return {
 		props: { data: Data.find((el) => el.topic === path) },
 	};
-}
+};
 
-export async function getStaticPaths() {
-	const dynamicPaths = Data.map((element) => {
+export const getStaticPaths = async () => {
+	const paths = Data.map((element) => {
 		return {
-			params: { topic: element.topic },
+			params: {
+				topic: element.topic,
+			},
 		};
 	});
 	return {
-		paths: dynamicPaths,
+		paths,
 		fallback: false,
 	};
-}
+};
