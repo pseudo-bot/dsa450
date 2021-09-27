@@ -13,7 +13,7 @@ const TabName = ({ name, selected, flag, onClick, href }) => {
 				}
 						dark:text-gray-200
 						transition-all duration-0
-						text-gray-500 sm:text-lg uppercase tracking-wider font-bold
+						text-gray-500 sm:text-lg uppercase tracking-wider font-medium
 					`}
 				onClick={() => {
 					if ((name === 'Problems' && flag) || (name === 'Leaderboards' && !flag))

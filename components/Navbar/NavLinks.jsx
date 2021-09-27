@@ -14,8 +14,8 @@ export default function NavLinks({ hidden }) {
 			sm:border sm:rounded sm:relative absolute
 			sm:top-0 top-16 left-0 sm:w-auto 
 			w-full items-center sm:bg-transparent 
-			bg-gray-700 dark:bg-gray-900 transition-all ease-in-out duration-300 
-			${hidden ? 'opacity-0 pointer-events-none' : ''} sm:opacity-100 sm:pointer-events-auto`}
+			bg-gray-700 dark:bg-gray-900 transition-height duration-500 
+			${hidden ? 'max-h-0' : 'max-h-[200%]'} sm:max-h-full overflow-hidden`}
 		>
 			<NavLinksText content="About" link="#" />
 			<NavLinksText content="Contribute" link="#" />
