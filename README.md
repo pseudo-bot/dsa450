@@ -6,11 +6,11 @@ Website to track your progress for the Love Babbar's Cracker sheet in a clean an
 Currently, uses local storage to save your progress.
 
 # Tech Stack:
--HTML
--TailwindCSS
--ReactJS
--NextJS
--AOS
--WebStorageAPIs
+- HTML
+- TailwindCSS
+- ReactJS
+- NextJS
+- AOS
+- WebStorageAPIs
 
 Milestone to be achieved: functionality for comparing your progress with peers and competing for the most numbers of questions solved
