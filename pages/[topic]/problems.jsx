@@ -1,10 +1,10 @@
 import Problem from '../../components/Topic/Problems.jsx';
-import Data from '../../assets/data/data'
+import Data from '../../assets/data/data.js';
 
-const Problems = ({ data }) => {
+const Problems = ({ data, index }) => {
 	return (
 		<>
-			<Problem data={data} />
+			<Problem data={data} index={index}/>
 		</>
 	);
 };
@@ -13,8 +13,9 @@ export default Problems;
 
 export const getStaticProps = (context) => {
 	const path = context.params.topic;
+	let index = Data.findIndex(el => el.topic === path)
 	return {
-		props: { data: Data.find((el) => el.topic === path) },
+		props: { data:  Data[index], index},
 	};
 };
 

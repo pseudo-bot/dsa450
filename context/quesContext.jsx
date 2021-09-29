@@ -1,28 +1,27 @@
-import { createContext, useState } from "react";
-import data from '../assets/data/data';
+import { createContext, useState } from 'react';
+import Data from '../assets/data/data';
+import { useEffect } from 'react';
 
-export const QuesContext = createContext(null);
+export const QuesContext = createContext([]);
 
-const dataOb = data.map(el => {
-  return {
-    topic: el.topic,
-    problems: el.problems.map(prob => {
-      return {
-        desc: prob.desc,
-        link: prob.link,
-        status: 0,
-      }
-    })
-  }
-})
+export const QuesProvider = ({ children }) => {
+	const [data, setData] = useState(Data);
 
-export const QuesProvider = ({children}) => {
-  const [data, setData] = useState(dataOb);
+	useEffect(() => {
+		if (!localStorage.getItem('data')) {
+			setData(Data);
+		} else {
+			setData(JSON.parse(localStorage.getItem('data')));
+		}
+	}, []);
 
-  return (
-    <QuesContext.Provider value={{data, setData}}>
-      {children}
-    </QuesContext.Provider>
-  );
-}
+	useEffect(() => {
+		localStorage.setItem('data', JSON.stringify(data));
+	});
 
+	return (
+		<QuesContext.Provider value={{ data, setData }}>
+			{children}
+		</QuesContext.Provider>
+	);
+};

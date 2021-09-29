@@ -7,13 +7,13 @@ const SignInCard = () => {
       tracking-wider overflow-hidden`}
 		>
 			<div className="text-4xl my-5 text-green-900 uppercase text-center poppins z-10">Login</div>
-			<div className="h-10 shadow-lg my-5 w-4/5 bg-white rounded-full flex items-center justify-evenly relative cursor-pointer poppins tracking-wider z-10">
+			<div className="h-10 shadow-lg my-5 w-4/5 bg-white rounded-full flex items-center justify-center relative cursor-pointer poppins tracking-wider z-10 text-sm sm:text-base text-gray-700">
 				<img
 					src="/images/google.png"
 					alt="Sign in with google"
-					className={`block h-3/5`}
+					className={`block h-3/5 mx-2`}
 				/>
-				Sign in with google
+				<span className="mx-2">Sign in with google</span>
 			</div>
 		</div>
 	);
