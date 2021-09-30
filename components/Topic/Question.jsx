@@ -32,7 +32,7 @@ const Question = ({ ques, href, tin, qin }) => {
 			className={`flex min-h-[14rem] w-full sm:max-w-sm text-gray-100 mx-8 my-4 rounded-3xl overflow-hidden relative items-center justify-between p-6`}
 		>
 			<div
-				className={`transform transition-all duration-300 ${
+				className={`transform transition-all duration-500 ${
 					data[tin].problems[qin].status
 						? 'dark:bg-gray-900 bg-[#18bd02]'
 						: 'dark:bg-gray-800 bg-[#df7802] rotate-180'
@@ -50,7 +50,7 @@ const Question = ({ ques, href, tin, qin }) => {
 				{ques}
 			</a>
 			<a href={href}
-				className={`cursor-pointer absolute w-16 h-16 z-0 rounded-full text-gray-600 pl-5 pt-2 ${
+				className={`cursor-pointer absolute w-16 h-16 z-0 rounded-full text-gray-600 pl-5 pt-2 transition-all duration-500 ${
 					data[tin].problems[qin].status
 						? 'dark:bg-gray-600 bg-[#009218] text-white'
 						: 'bg-yellow-200 dark:bg-gray-600 dark:text-white'
