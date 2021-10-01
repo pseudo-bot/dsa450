@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 
 const CardsContainer = () => {
 	let { data } = useContext(QuesContext);
-	console.log(data);
 	useEffect(() => {
 		Aos.init({
 			duration: 600,
