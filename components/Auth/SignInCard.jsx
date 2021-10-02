@@ -9,11 +9,11 @@ const SignInButton = ({signInWith, onClick, signInImg}) => {
 	);
 }
 
-const SignInCard = ({ googleSignIn }) => {
+const SignInCard = ({ signIn }) => {
 	return (
 		<div className={`max-w-[40rem] min-w-[20rem] mx-auto w-1/2 absolute top-[30%] right-1/2 translate-x-1/2 flex flex-col justify-around items-center`}>
-			<SignInButton signInWith={"Google"} onClick={googleSignIn} signInImg={"/images/google.png"}></SignInButton>
-			<SignInButton signInWith={"GitHub"} onClick={""} signInImg={"/images/github.png"}></SignInButton>
+			<SignInButton signInWith={"Google"} onClick={""} signInImg={"/images/google.png"}></SignInButton>
+			<SignInButton signInWith={"GitHub"} onClick={signIn} signInImg={"/images/github.png"}></SignInButton>
 			<SignInButton signInWith={"Twitter"} onClick={""} signInImg={"/images/twitter.png"}></SignInButton>
 		</div>
 	);

@@ -1,28 +1,19 @@
-import React from 'react';
-import { auth, googleProvider } from '../lib/firebase.js';
-import { signInWithPopup, signInWithRedirect } from 'firebase/auth';
-import SignInButton from '../components/Auth/SignInCard';
+import SignInCard from '../components/Auth/SignInCard';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
-const signInWithGoogle = async () => {
-	try {
-		await signInWithRedirect(auth, googleProvider);
-	} catch (err) {
-		alert('Error signing in. Please try again');
+export default function Component() {
+	const { data: session } = useSession();
+	if (session) {
+		return (
+			<>
+				Signed in as {session.user.email} <br />
+				<button onClick={() => signOut()}>Sign out</button>
+			</>
+		);
 	}
-};
-
-const signOut = () => {
-	try {
-		auth.signOut();
-	} catch (err) {
-		alert('Error signing out. Please try again.');
-	}
-};
-
-export default function Signin() {
 	return (
-		<div>
-			<SignInButton googleSignIn={signInWithGoogle} />
-		</div>
+		<>
+			<SignInCard signIn={signIn} />
+		</>
 	);
 }
