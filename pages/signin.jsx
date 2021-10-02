@@ -1,10 +1,11 @@
 import React from 'react';
-import { auth, googleAuthProvider } from '../lib/firebase.js';
+import { auth, googleProvider } from '../lib/firebase.js';
+import { signInWithPopup, signInWithRedirect } from 'firebase/auth';
 import SignInButton from '../components/Auth/SignInCard';
 
 const signInWithGoogle = async () => {
 	try {
-		await auth.signInWithPopup(googleAuthProvider);
+		await signInWithRedirect(auth, googleProvider);
 	} catch (err) {
 		alert('Error signing in. Please try again');
 	}

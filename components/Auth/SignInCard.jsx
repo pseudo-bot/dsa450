@@ -15,7 +15,6 @@ const SignInCard = ({ googleSignIn }) => {
 			<SignInButton signInWith={"Google"} onClick={googleSignIn} signInImg={"/images/google.png"}></SignInButton>
 			<SignInButton signInWith={"GitHub"} onClick={""} signInImg={"/images/github.png"}></SignInButton>
 			<SignInButton signInWith={"Twitter"} onClick={""} signInImg={"/images/twitter.png"}></SignInButton>
-
 		</div>
 	);
 };
