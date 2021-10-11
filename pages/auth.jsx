@@ -10,7 +10,7 @@ export default function Auth() {
 	return (
 		<div>
 			{user ? <Head title="Profile"/>:<Head title="Sign in"/>}
-			{user ? <Profile /> : <SignInCard signInWithGoogle={signInWithGoogle} />}
+			{user ? <Profile user={user}/> : <SignInCard signInWithGoogle={signInWithGoogle} />}
 		</div>
 	);
 }

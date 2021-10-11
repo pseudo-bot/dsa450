@@ -1,5 +1,3 @@
-import { UserContext } from '../../context/UserContext';
-import { useContext } from 'react';
 import Link from 'next/link';
 import { logOut } from '../../lib/firebase'
 
@@ -36,8 +34,7 @@ const SignOut = () => {
 	);
 };
 
-export default function Profile() {
-	let user = useContext(UserContext);
+export default function Profile({user}) {
 	return (
 		<div className="absolute top-44 w-full flex flex-col items-center">
 			<ProfileData user={user} />
