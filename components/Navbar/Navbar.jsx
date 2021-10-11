@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<div className={`sm:absolute left-12`}>
 			<Link href="/">
-				<img src="/images/home.png" alt="Home" className="cursor-pointer" />
+				<img src="/images/home.png" alt="Home" className="cursor-pointer h-22 w-22" />
 			</Link>
 		</div>
 	);
