@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { QuesContext } from '../../context/quesContext';
+import { QuesContext } from '../../context/QuestionsContext';
 
 const Tick = ({ status, handleClick }) => {
 	return (
@@ -24,7 +24,7 @@ const Tick = ({ status, handleClick }) => {
 };
 
 const Question = ({ ques, href, tin, qin }) => {
-	let { data, setData } = useContext(QuesContext);
+	let { data, setStatus } = useContext(QuesContext);
 
 	const changeStatus = () => {
 		let newData = [...data];
@@ -48,7 +48,7 @@ const Question = ({ ques, href, tin, qin }) => {
 			<Tick
 				status={data[tin].problems[qin].status}
 				handleClick={() => {
-					changeStatus();
+					setStatus(tin, qin);
 				}}
 			/>
 

@@ -3,21 +3,20 @@ import '../styles/globals.css';
 
 import TopicsLayout from '../components/Topic/Layout';
 import { useRouter } from 'next/router';
-import { QuesProvider } from '../context/quesContext';
+import { UserProvider } from '../context/UserContext';
+import { QuesProvider } from '../context/QuestionsContext';
 
-import { SessionProvider } from 'next-auth/react';
-
-function App({ Component, pageProps: {session, ...pageProps} }) {
+function App({ Component, pageProps: { session, ...pageProps } }) {
 	const router = useRouter();
 	return (
-		<SessionProvider session={session}>
+		<UserProvider>
 			<QuesProvider>
 				<Layout>
 					<Component {...pageProps} />
 					{router.query.topic ? <TopicsLayout /> : null}
 				</Layout>
 			</QuesProvider>
-		</SessionProvider>
+		</UserProvider>
 	);
 }
 

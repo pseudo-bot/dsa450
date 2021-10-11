@@ -1,6 +1,6 @@
 import Card from './Card';
 import { useContext, useEffect } from 'react';
-import { QuesContext } from '../../context/quesContext';
+import { QuesContext } from '../../context/QuestionsContext';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
