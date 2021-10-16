@@ -1,32 +1,33 @@
 import { createContext, useState } from 'react';
-import Data from '../assets/data/data';
-import { useEffect, useContext } from 'react';
+import Status from '../assets/data/status';
+import { useContext, useEffect } from 'react';
 import { UserContext } from './UserContext';
-import { doc, getDoc, setDoc, onSnapshot, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 doc;
 
 export const QuesContext = createContext([]);
 
 export const QuesProvider = ({ children }) => {
-	const [data, setData] = useState(Data);
 	let user = useContext(UserContext);
+	const [status, setStatus] = useState(Status);
 
-	const setStatus = async (tin, qin) => {
+	const changeStatus = async (topic_index, question_index) => {
 		if (user) {
 			const docRef = doc(db, 'users', user.uid);
-			const docSnap = await getDoc(docRef);
 
-			let newData = [...docSnap.data().data];
-			newData[tin].problems[qin].status =
-				!docSnap.data().data[tin].problems[qin].status;
+			let newStatus = [...status];
+			newStatus[topic_index][0][question_index] =
+				!status[topic_index][0][question_index];
+
 			await updateDoc(docRef, {
-				data: newData,
+				status: newStatus,
 			});
 		} else {
-			let newData = [...data];
-			newData[tin].problems[qin].status = !data[tin].problems[qin].status;
-			setData(newData);
+			let newStatus = [...status];
+			newStatus[topic_index][0][question_index] =
+				!status[topic_index][0][question_index];
+			setStatus(newStatus);
 		}
 	};
 
@@ -37,14 +38,14 @@ export const QuesProvider = ({ children }) => {
 			(async function () {
 				const docSnap = await getDoc(docRef);
 				if (docSnap.exists()) {
-					unsub = onSnapshot(docRef, (doc) => {
+					unsub = onSnapshot(docRef, doc => {
 						if (doc.data()) {
-							setData(doc.data().data);
+							setStatus(doc.data().status)
 						}
-					});
+					})
 				} else {
 					await setDoc(docRef, {
-						data: Data,
+						status,
 					});
 				}
 			})();
@@ -53,7 +54,7 @@ export const QuesProvider = ({ children }) => {
 	}, [user]);
 
 	return (
-		<QuesContext.Provider value={{ data, setStatus }}>
+		<QuesContext.Provider value={{ status, changeStatus }}>
 			{children}
 		</QuesContext.Provider>
 	);

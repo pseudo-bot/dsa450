@@ -23,15 +23,9 @@ const Tick = ({ status, handleClick }) => {
 	);
 };
 
-const Question = ({ ques, href, tin, qin }) => {
-	let { data, setStatus } = useContext(QuesContext);
+const Question = ({ ques, href, topic_index, question_index }) => {
+	let { status, changeStatus } = useContext(QuesContext);
 
-	const changeStatus = () => {
-		let newData = [...data];
-		newData[tin].problems[qin].status = !data[tin].problems[qin].status;
-		data = newData;
-		setData(data);
-	};
 	return (
 		<div
 			data-aos="fade-up"
@@ -39,16 +33,16 @@ const Question = ({ ques, href, tin, qin }) => {
 		>
 			<div
 				className={`transform transition-all duration-500 ${
-					data[tin].problems[qin].status
+					status[topic_index][0][question_index]
 						? 'dark:bg-gray-900 bg-[#18bd02]'
 						: 'dark:bg-gray-800 bg-[#df7802]'
 				} z-0 absolute h-full w-full inset-0`}
 			></div>
 
 			<Tick
-				status={data[tin].problems[qin].status}
+				status={status[topic_index][0][question_index]}
 				handleClick={() => {
-					setStatus(tin, qin);
+					changeStatus(topic_index, question_index);
 				}}
 			/>
 
@@ -58,7 +52,7 @@ const Question = ({ ques, href, tin, qin }) => {
 			<a
 				href={href}
 				className={`cursor-pointer absolute w-16 h-16 z-0 rounded-full text-gray-600 pl-5 pt-2 transition-all duration-500 ${
-					data[tin].problems[qin].status
+					status[topic_index][0][question_index]
 						? 'dark:bg-gray-600 bg-[#009218] text-white'
 						: 'bg-yellow-200 dark:bg-gray-600 dark:text-white'
 				} -bottom-4 -right-4 flex text-2xl

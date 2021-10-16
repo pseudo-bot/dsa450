@@ -4,7 +4,7 @@ import { logOut } from '../../lib/firebase'
 const ProfileData = ({ user }) => {
 	return (
 		<>
-			<img src={user.photoURL} alt="Profile" className="block rounded-full" />
+			<img src={user.photoURL} alt="Profile" className="block rounded-full h-32 w- 32" />
 			<div className="my-10 dark:text-gray-200 text-gray-700 mx-8 text-lg text-justify">
 				Hey{' '}
 				<b>

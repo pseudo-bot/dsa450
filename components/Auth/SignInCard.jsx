@@ -18,12 +18,12 @@ const Footer = () => {
 	);
 }
 
-const SignInCard = ({ signInWithGoogle }) => {
+const SignInCard = ({ signInWithGoogle, signInWithGithub }) => {
 	return (
 		<div className={`max-w-[40rem] min-w-[20rem] mx-auto w-1/2 absolute top-1/3 right-1/2 translate-x-1/2 flex flex-col justify-around items-center`}>
 			<SignInButton signInWith={"Google"} onClick={signInWithGoogle} signInImg={"/images/google.png"}></SignInButton>
-			{/* <SignInButton signInWith={"GitHub"} onClick={""} signInImg={"/images/github.png"}></SignInButton>
-			<SignInButton signInWith={"Twitter"} onClick={""} signInImg={"/images/twitter.png"}></SignInButton> */}
+			<SignInButton signInWith={"GitHub"} onClick={signInWithGithub} signInImg={"/images/github.png"}></SignInButton>
+			{/* <SignInButton signInWith={"Twitter"} onClick={""} signInImg={"/images/twitter.png"}></SignInButton> */}
 			<Footer/>
 		</div>
 	);
