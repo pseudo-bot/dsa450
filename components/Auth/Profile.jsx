@@ -27,7 +27,7 @@ const ProfileData = ({ id, data, label }) => {
 				type="text"
 				id={id}
 				value={data}
-				className={`h-10 max-w-[15rem] p-4 mx-4 bg-blue-200 dark:bg-gray-800 dark:text-gray-100 text-center rounded-full text-gray-800`}
+				className={`h-10 max-w-[15rem] shadow-sm p-4 mx-4 bg-blue-100 dark:bg-gray-800 dark:text-gray-100 text-center rounded-full text-gray-700`}
 				disabled
 			/>
 		</div>
@@ -48,7 +48,7 @@ export default function Profile({ user }) {
 				<div
 					className={`absolute text-5xl tracking-widest font-extrabold opacity-20 text-gray-500 dark:text-gray-50`}
 				>
-					MY PROFILE
+					PROFILE
 				</div>
 			</div>
 			<img
