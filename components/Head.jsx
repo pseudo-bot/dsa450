@@ -6,7 +6,7 @@ const Head = ({ title }) => {
 			<title>{title}</title>
 			<link
 				rel="icon"
-				href="/images/algorithm.png"
+				href="/images/title_icon.png"
 				type="image/icon type"
 			></link>
 		</HeadTag>
