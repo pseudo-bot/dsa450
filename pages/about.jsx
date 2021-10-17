@@ -1,3 +1,11 @@
-export default function About() {
-	return <div></div>;
+import About from '../components/About';
+import Head from '../components/Head';
+
+export default function AboutPage() {
+	return (
+		<div>
+			<Head title="About" />
+      <About />
+		</div>
+	);
 }

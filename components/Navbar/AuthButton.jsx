@@ -22,7 +22,7 @@ const SignOutButton = ({ src, name }) => {
 					alt="Profile Image"
 					className="cursor-pointer block w-10 h-10 rounded-full"
 				/>
-				<div className="cursor-pointer m-3 text-sm p-2 px-3 rounded-full text-gray-100 font-medium bg-indigo-500">
+				<div className="cursor-pointer m-3 text-sm p-2 px-3 rounded-full text-gray-100 font-medium dark:bg-gray-600 bg-indigo-500">
 					<span className="hidden md:inline">Signed in as</span> <i>{name.substr(0, 20)}</i>
 				</div>
 			</div>

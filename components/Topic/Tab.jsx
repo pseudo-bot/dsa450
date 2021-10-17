@@ -40,13 +40,13 @@ export default function Tab({ questionTab, onClick }) {
 				href={path + 'problems'}
 			/>
 
-			<TabName
+			{/* <TabName
 				name="Leaderboards"
 				selected={!questionTab}
 				flag={questionTab}
 				onClick={onClick}
 				href={path + 'leaderboards'}
-			/>
+			/> */}
 		</div>
 	);
 }
