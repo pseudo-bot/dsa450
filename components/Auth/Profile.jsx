@@ -1,44 +1,12 @@
-import Link from 'next/link';
+/* eslint-disable @next/next/no-img-element */
 import { logOut } from '../../lib/firebase';
 import { QuesContext } from '../../context/QuestionsContext';
 import { useContext } from 'react';
 
-const ProfilePic = ({ photoURL }) => {
-	return (
-		<div>
-			<img
-				src={photoURL}
-				alt="Profile Picture"
-				className={`block h-28 w-28 rounded-lg my-10`}
-			/>
-		</div>
-	);
-};
-
-const ProfileData = ({ name, id, data }) => {
-	return (
-		<div className="my-4 z-8 w-4/5 flex flex-col justify-center items-center">
-			<label
-				htmlFor={id}
-				className="mx-8 w-20 text-lg text-center dark:text-gray-200 text-gray-700"
-			>
-				{name}{' '}
-			</label>
-			<input
-				type="text"
-				id={id}
-				disabled
-				value={data}
-				className={`p-3 text-lg text-gray-600 bg-gray-50 my-4 rounded-full text-center w-4/5 shadow-md border max-w-[24rem]`}
-			/>
-		</div>
-	);
-};
-
 const SignOut = () => {
 	return (
 		<div
-			className="transition-bg duration-200 bg-red-500 tracking-wider dark:bg-gray-800 shadow-md hover:bg-red-400 text-gray-200 hover:text-white text-lg p-4 rounded cursor-pointer z-8 my-6"
+			className="transition-bg uppercase font-medium duration-200 bg-red-500 tracking-wider dark:bg-gray-800 shadow-md hover:bg-red-400 text-gray-200 hover:text-white text-lg p-4 rounded-lg cursor-pointer z-8 my-10"
 			onClick={logOut}
 		>
 			Log out
@@ -46,23 +14,52 @@ const SignOut = () => {
 	);
 };
 
+const ProfileData = ({ id, data, label }) => {
+	return (
+		<div className={`flex justify-between items-center flex-col`}>
+			<label
+				htmlFor={id}
+				className={`p-3 w-32 text-center rounded-full font-medium uppercase tracking-wider text-gray-600 dark:text-gray-200`}
+			>
+				{label}
+			</label>
+			<input
+				type="text"
+				id={id}
+				value={data}
+				className={`h-10 max-w-[15rem] p-4 mx-4 bg-blue-200 dark:bg-gray-800 dark:text-gray-100 text-center rounded-full text-gray-800`}
+				disabled
+			/>
+		</div>
+	);
+};
+
 export default function Profile({ user }) {
 	let solved = 0;
-	const { status } = useContext(QuesContext);
+	let { status } = useContext(QuesContext);
 
 	status.forEach((el) => {
 		solved += el[0].filter((e) => e).length;
 	});
 
 	return (
-		<div className="w-full absolute top-32">
-			<div className="relative my-10 mx-auto max-w-[60rem] w-4/5 rounded-lg flex justify-center flex-col items-center dark:bg-gray-600 shadow-2xl">
-				<ProfilePic photoURL={user.photoURL} />
-				<ProfileData data={user.displayName} id="username" name="Username" />
-				<ProfileData data={solved} id="solved" name="Solved" />
-				<ProfileData data={450 - solved} id="unsolved" name="Unsolved" />
-				<SignOut />
+		<div className={`relative top-28 flex flex-col items-center gap-6`}>
+			<div className={`m-6 flex items-center justify-center`}>
+				<div
+					className={`absolute text-5xl tracking-widest font-extrabold opacity-20 text-gray-500 dark:text-gray-50`}
+				>
+					MY PROFILE
+				</div>
 			</div>
+			<img
+				src={user.photoURL}
+				alt="Profile Picture"
+				className={`block rounded-full h-28 border-2 my-6`}
+			/>
+			<ProfileData id="username" data={user.displayName} label="Username" />
+			<ProfileData id="solved" data={solved} label="Solved" />
+			<ProfileData id="unsolved" data={450 - solved} label="Unsolved" />
+			<SignOut />
 		</div>
 	);
 }
