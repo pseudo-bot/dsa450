@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { UserContext } from '../../context/UserContext';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 
 const SignInButton = () => {
 	return (
