@@ -26,7 +26,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full flex h-16 bg-gray-700 dark:bg-gray-900 fixed items-center sm:justify-around justify-between px-8 z-10">
+		<nav className="w-full z-50 flex h-16 bg-gray-700 dark:bg-gray-900 fixed items-center sm:justify-around justify-between px-8">
 			<AuthButton />
 			<NavLinks hidden={hidden} />
 			<Menubar click={handleClick} hidden={hidden} />

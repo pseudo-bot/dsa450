@@ -18,7 +18,7 @@ export default function Layout() {
 	};
 
 	return (
-		<div className="fixed top-16">
+		<div className="fixed top-16 z-50">
 			<Tab questionTab={questionTab} onClick={handleClick} />
 		</div>
 	);
