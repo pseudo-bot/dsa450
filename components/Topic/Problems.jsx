@@ -18,9 +18,11 @@ export default function Problems({ data, index }) {
 
   return (
     <>
-      <div className="text-gray-500 text-lg font-medium justify-center px-8 gap-20 flex items-center w-screen h-12 z-50 fixed bg-gray-100 top-16 shadow-md border-green-300 border-b">
-        <div className="border-b-2 text-[#15a801] border-[#15a801]">Solved {solved}</div>
-        <div className="border-b-2 text-[#df7802] border-[#df7802]">
+      <div className="text-gray-500 justify-center px-8 gap-20 flex items-center w-screen h-12 z-50 fixed bg-gray-100 dark:bg-gray-600 top-16 shadow-md border-green-300 border-b dark:border-gray-400">
+        <div className="border-b-2 text-[#15a801] border-[#15a801] dark:text-gray-200 dark:border-gray-200">
+          Solved {solved}
+        </div>
+        <div className="border-b-2 text-[#df7802] border-[#df7802] dark:text-gray-200 dark:border-gray-200">
           Unsolved {total - solved}
         </div>
       </div>
