@@ -37,7 +37,7 @@ const Question = ({ ques, href, topic_index, question_index }) => {
       <div
         className={`transform transition-all duration-500 ${
           status[topic_index][0][question_index]
-            ? 'dark:bg-gray-900 bg-[#18bd02]'
+            ? 'dark:bg-gray-900 bg-[#15a801]'
             : 'dark:bg-gray-800 bg-[#df7802]'
         } z-0 absolute h-full w-full inset-0`}
       ></div>

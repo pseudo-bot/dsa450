@@ -5,7 +5,7 @@ import Question from './Question';
 import { QuesContext } from '../../context/QuestionsContext';
 
 export default function Problems({ data, index }) {
-	const { status } = useContext(QuesContext);
+  const { status } = useContext(QuesContext);
 
   useEffect(() => {
     Aos.init({
@@ -13,12 +13,18 @@ export default function Problems({ data, index }) {
     });
   }, []);
 
-	let total = status[index][0].length;
-	let solved = status[index][0].filter(item => item).length;
+  let total = status[index][0].length;
+  let solved = status[index][0].filter((item) => item).length;
 
   return (
     <>
-      <div className="w-screen px-5 mx-auto relative top-44 flex flex-wrap max-w-5xl justify-center">
+      <div className="text-gray-500 text-lg font-medium justify-center px-8 gap-20 flex items-center w-screen h-12 z-50 fixed bg-gray-100 top-16 shadow-md border-green-300 border-b">
+        <div className="border-b-2 text-[#15a801] border-[#15a801]">Solved {solved}</div>
+        <div className="border-b-2 text-[#df7802] border-[#df7802]">
+          Unsolved {total - solved}
+        </div>
+      </div>
+      <div className="w-screen px-5 mx-auto relative top-32 flex flex-wrap max-w-5xl justify-center">
         {data.problems.map((el, i) => {
           return (
             <Question
@@ -31,11 +37,6 @@ export default function Problems({ data, index }) {
           );
         })}
       </div>
-
-      <div className="pointer-cursor z-50 max-w-[20rem] dark:border-gray-100 shadow-md opacity-90 fixed py-2 w-3/4 justify-between dark:bg-gray-600 rounded-full bg-green-600 text-gray-50 top-32 left-1/2 -translate-x-1/2 flex items-center px-8">
-				<div className=''>Solved {solved}</div>
-				<div className=''>Unsolved {total - solved}</div>
-			</div>
     </>
   );
 }
